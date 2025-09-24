@@ -4,9 +4,10 @@
   "description": "The Sunshine Collective - A wellness and personal development platform",
   "main": "index.html",
   "scripts": {
-    "dev": "tinacms dev -c \"python3 -m http.server 3000\"",
-    "build": "tinacms build",
-    "tina:dev": "tinacms dev",
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Static site - no build required'",
+    "start": "python3 -m http.server 3000",
+    "tina:dev": "tinacms dev -c \"python3 -m http.server 3000\"",
     "tina:build": "tinacms build"
   },
   "keywords": [
@@ -20,9 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "@tinacms/cli": "^1.5.30",
-    "tinacms": "^1.5.30"
-  },
-  "dependencies": {
+    "tinacms": "^1.5.30",
     "@tinacms/datalayer": "^1.2.32"
   }
 }

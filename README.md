@@ -1,34 +1,48 @@
-# The Sunshine Collective Website
+# The Sunshine Collective
 
-A beautiful, responsive website for The Sunshine Collective, featuring a stunning gradient-based design using your custom color palette and seasonal theming.
+A wellness coaching website for Kelly Harper, featuring transformational life coaching, mindfulness training, and women's empowerment programs.
 
-## 🌈 Color Palette
+## 🌟 Features
 
-This website uses your provided PNG color palette:
-- **Light**: `#f9fafd` - Clean, fresh backgrounds
-- **Warm Neutral**: `#8c756a` - Natural, earthy text and accents  
-- **Cyan**: `#1ac8db` - Vibrant primary accent
-- **Blue**: `#0292b7` - Deep water-inspired secondary
-- **Light Cyan**: `#99dfec` - Soft, sky-like highlights
-- **Forest**: `#217650` - Rich, natural green
+- Responsive design with seasonal theming
+- Individual coaching services
+- Mindfulness & meditation coaching
+- Women's empowerment circle
+- TinaCMS integration for content management (to be configured after deployment)
 
-## ✨ Features
+## 🚀 Deployment Instructions
 
-### Design & Visual
-- **Seasonal Theming**: Automatically changes color scheme based on current season
-- **Beautiful Gradients**: Multiple gradient combinations using your color palette
-- **Responsive Design**: Mobile-first approach with breakpoints for all devices
-- **Smooth Animations**: Fade-ins, hover effects, and micro-interactions
-- **Modern Typography**: Inter + Crimson Text font pairing
+### Phase 1: Initial Static Deployment
 
-### Functionality
-- **Interactive Navigation**: Smooth scrolling, mobile hamburger menu
-- **Testimonials Carousel**: Auto-playing with manual controls and touch support
-- **Gallery Filtering**: Category-based filtering with smooth animations
-- **Image Lightbox**: Full-screen image viewer with keyboard navigation
-- **Form Validation**: Real-time validation with helpful error messages
-- **Newsletter Integration**: Ready for Google Sheets integration
-- **Contact Forms**: Advanced form with progress tracking and enhancements
+1. **Deploy to Vercel:**
+   - Connect this GitHub repository to Vercel
+   - Use default build settings (static site)
+   - Deploy to get your Vercel URL
+
+### Phase 2: Enable TinaCMS (After Getting URL)
+
+2. **Configure TinaCMS:**
+   - Sign up at [tina.io](https://tina.io)
+   - Add your Vercel URL as the site URL
+   - Get your `TINA_CLIENT_ID` and `TINA_TOKEN`
+
+3. **Add Environment Variables to Vercel:**
+   ```
+   TINA_CLIENT_ID=your_client_id
+   TINA_TOKEN=your_token
+   ```
+
+4. **Update package.json scripts for TinaCMS:**
+   ```json
+   {
+     "scripts": {
+       "dev": "tinacms dev -c \"python3 -m http.server 3000\"",
+       "build": "tinacms build"
+     }
+   }
+   ```
+
+5. **Redeploy with TinaCMS enabled**
 
 ### Pages
 1. **Home** (`index.html`) - Hero, services preview, testimonials, newsletter signup
