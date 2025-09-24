@@ -4,8 +4,8 @@
   "description": "The Sunshine Collective - A wellness and personal development platform",
   "main": "index.html",
   "scripts": {
-    "dev": "python3 -m http.server 3000",
-    "build": "echo 'Static site - no build required'",
+    "dev": "tinacms dev -c \"python3 -m http.server 3000\"",
+    "build": "tinacms build",
     "start": "python3 -m http.server 3000",
     "tina:dev": "tinacms dev -c \"python3 -m http.server 3000\"",
     "tina:build": "tinacms build"
