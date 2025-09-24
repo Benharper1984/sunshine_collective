@@ -1,11 +1,19 @@
 {
   "builds": [
     {
-      "src": "**",
-      "use": "@vercel/static"
+      "src": "package.json",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
+    {
+      "src": "/admin",
+      "dest": "/admin/index.html"
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "/admin/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/$1"

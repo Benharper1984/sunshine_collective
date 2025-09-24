@@ -11,6 +11,7 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: ".",
+    host: "0.0.0.0",
   },
   
   media: {

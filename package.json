@@ -19,9 +19,10 @@
   ],
   "author": "Kelly Harper - The Sunshine Collective",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@tinacms/cli": "^1.5.30",
     "tinacms": "^1.5.30",
     "@tinacms/datalayer": "^1.2.32"
-  }
+  },
+  "devDependencies": {}
 }
