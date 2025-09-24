@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Sunshine Collective</title>
+    <meta name="description" content="Get in touch with The Sunshine Collective for consultations, workshops, and permaculture services.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="theme-spring">
+    <!-- Navigation -->
+    <nav class="nav-main">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">The Sunshine Collective</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-gradient"></div>
+        <div class="container">
+            <h1 class="page-title">Contact</h1>
+            <p class="page-subtitle">Let's start your journey toward regenerative living</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-section">
+                        <h3>Get in Touch</h3>
+                        <p>Ready to transform your space into a thriving ecosystem? We'd love to hear from you and learn about your vision.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <div class="icon-gradient gradient-email"></div>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>hello@sunshinecollective.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <div class="icon-gradient gradient-phone"></div>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>(555) 123-GROW</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <div class="icon-gradient gradient-location"></div>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Service Area</h4>
+                                    <p>San Francisco Bay Area</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-link">
+                                    <div class="social-gradient gradient-instagram"></div>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <div class="social-gradient gradient-facebook"></div>
+                                    <span>Facebook</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-header">
+                            <h3>Send Us a Message</h3>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a topic</option>
+                                <option value="consultation">Consultation Inquiry</option>
+                                <option value="design">Design Project</option>
+                                <option value="workshop">Workshop Information</option>
+                                <option value="installation">Installation Services</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, property, or questions..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests[]" value="consultation">
+                                <span class="checkmark"></span>
+                                I'm interested in a consultation
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests[]" value="workshops">
+                                <span class="checkmark"></span>
+                                I'd like to hear about workshops
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests[]" value="newsletter">
+                                <span class="checkmark"></span>
+                                Sign me up for the newsletter
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Booking -->
+    <section class="consultation-booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h2>Book a Consultation</h2>
+                    <p>Ready to get started? We offer both free introductory consultations and comprehensive paid consultations.</p>
+                    
+                    <div class="consultation-options">
+                        <div class="consultation-option">
+                            <div class="option-gradient gradient-free"></div>
+                            <div class="option-content">
+                                <h4>Free 15-Minute Consultation</h4>
+                                <p>Perfect for initial questions and determining if we're a good fit for your project.</p>
+                                <ul>
+                                    <li>Project overview discussion</li>
+                                    <li>Initial guidance</li>
+                                    <li>Service recommendations</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="consultation-option">
+                            <div class="option-gradient gradient-paid"></div>
+                            <div class="option-content">
+                                <h4>Full 1-Hour Consultation</h4>
+                                <p class="option-price">$125</p>
+                                <p>Comprehensive consultation with detailed assessment and actionable recommendations.</p>
+                                <ul>
+                                    <li>Site assessment and analysis</li>
+                                    <li>Goal setting and visioning</li>
+                                    <li>Detailed recommendations</li>
+                                    <li>Resource and next steps guide</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-calendar">
+                    <div class="calendar-placeholder">
+                        <div class="calendar-gradient"></div>
+                        <div class="calendar-content">
+                            <h4>Schedule Your Consultation</h4>
+                            <p>Calendar integration will be displayed here</p>
+                            <a href="#" class="btn btn-secondary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-gradient"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Begin?</h2>
+                <p>Your regenerative journey starts with a single conversation.</p>
+                <a href="#contact-form" class="btn btn-primary">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The Sunshine Collective</h3>
+                    <p>Creating regenerative life for future generations</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#consultation">Consultation</a></li>
+                            <li><a href="services.html#design">Design</a></li>
+                            <li><a href="services.html#install">Installation</a></li>
+                            <li><a href="services.html#classes">Classes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Sunshine Collective. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

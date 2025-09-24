@@ -1,0 +1,479 @@
+/* Contact Page Specific Styles */
+
+/* Contact Main Section */
+.contact-main {
+  padding: var(--space-2xl) 0;
+  background: var(--color-white);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+/* Contact Information */
+.contact-info {
+  position: sticky;
+  top: 100px;
+}
+
+.info-section h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  font-size: 2rem;
+}
+
+.info-section > p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-details {
+  margin-bottom: var(--space-2xl);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--color-light) 0%, var(--color-off-white) 100%);
+  border-radius: var(--radius-md);
+  transition: var(--transition-base);
+}
+
+.contact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.icon-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.gradient-email { background: var(--gradient-primary); }
+.gradient-phone { background: var(--gradient-nature); }
+.gradient-location { background: var(--gradient-earth); }
+
+.contact-text h4 {
+  color: var(--color-warm-dark);
+  font-size: 1.125rem;
+  margin-bottom: var(--space-xs);
+}
+
+.contact-text p {
+  color: var(--color-warm-neutral);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.social-links h4 {
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-md);
+  font-size: 1.125rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-white);
+  border: 2px solid var(--color-light-cyan);
+  border-radius: var(--radius-md);
+  color: var(--color-warm-neutral);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.social-link:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.social-gradient {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.gradient-instagram { background: var(--gradient-primary); }
+.gradient-facebook { background: var(--gradient-nature); }
+
+/* Contact Form */
+.contact-form-section {
+  background: var(--color-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-md);
+}
+
+.form-header h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-xl);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-xs);
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: var(--space-md);
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  border: 2px solid var(--color-light-cyan);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  transition: var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(26, 200, 219, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-warm-neutral);
+}
+
+/* Checkbox Styles */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-sm);
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-light-cyan);
+  border-radius: 4px;
+  position: relative;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.checkmark::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0;
+  transition: var(--transition-fast);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+  background: var(--gradient-primary);
+  border-color: transparent;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+  opacity: 1;
+}
+
+.checkbox-label:hover .checkmark {
+  border-color: var(--color-primary);
+}
+
+/* Consultation Booking */
+.consultation-booking {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, var(--color-light) 0%, var(--color-off-white) 100%);
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.booking-info h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.booking-info > p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-2xl);
+}
+
+.consultation-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.consultation-option {
+  position: relative;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
+  overflow: hidden;
+}
+
+.consultation-option:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.option-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.gradient-free { background: var(--gradient-nature); }
+.gradient-paid { background: var(--gradient-primary); }
+
+.option-content {
+  position: relative;
+  z-index: 2;
+}
+
+.option-content h4 {
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-md);
+  font-size: 1.375rem;
+}
+
+.option-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.option-content p {
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+}
+
+.option-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.option-content ul li {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  color: var(--color-warm-neutral);
+}
+
+.option-content ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Calendar Placeholder */
+.booking-calendar {
+  position: sticky;
+  top: 100px;
+}
+
+.calendar-placeholder {
+  position: relative;
+  height: 400px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-secondary);
+  opacity: 0.1;
+}
+
+.calendar-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: var(--space-xl);
+}
+
+.calendar-content h4 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  font-size: 1.5rem;
+}
+
+.calendar-content p {
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-xl);
+  font-size: 1.125rem;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 968px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+  
+  .contact-info {
+    position: static;
+  }
+  
+  .booking-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+  
+  .booking-calendar {
+    position: static;
+  }
+  
+  .consultation-options {
+    flex-direction: row;
+    gap: var(--space-lg);
+  }
+  
+  .consultation-option {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: var(--space-xl);
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .consultation-options {
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+  
+  .consultation-option {
+    padding: var(--space-lg);
+  }
+  
+  .calendar-placeholder {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-main {
+    padding: var(--space-lg) 0;
+  }
+  
+  .contact-form-section {
+    padding: var(--space-lg);
+  }
+  
+  .form-header h3 {
+    font-size: 1.75rem;
+  }
+  
+  .info-section h3,
+  .booking-info h2 {
+    font-size: 1.75rem;
+  }
+  
+  .social-icons {
+    flex-direction: column;
+  }
+  
+  .social-link {
+    justify-content: center;
+  }
+}

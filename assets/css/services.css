@@ -1,0 +1,348 @@
+/* Services Page Specific Styles */
+
+/* Services Overview */
+.services-overview {
+  padding: var(--space-2xl) 0;
+  background: var(--color-white);
+}
+
+.seasonal-flow {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.seasonal-flow h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.seasonal-flow p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--color-warm-neutral);
+}
+
+/* Main Services */
+.main-services {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, var(--color-light) 0%, var(--color-off-white) 100%);
+}
+
+.service-section {
+  margin-bottom: var(--space-3xl);
+  padding: var(--space-2xl) 0;
+  border-radius: var(--radius-xl);
+  position: relative;
+}
+
+.service-section:last-child {
+  margin-bottom: 0;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.service-content.reverse {
+  direction: rtl;
+}
+
+.service-content.reverse > * {
+  direction: ltr;
+}
+
+.service-text {
+  padding: var(--space-lg);
+}
+
+.service-text h3 {
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-lg);
+  font-size: 2.5rem;
+}
+
+.service-text p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+  color: var(--color-warm-neutral);
+}
+
+.service-features {
+  list-style: none;
+  margin-bottom: var(--space-xl);
+}
+
+.service-features li {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  color: var(--color-warm-neutral);
+  font-size: 1.125rem;
+}
+
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-forest);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.service-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.price-detail {
+  font-size: 1rem;
+  color: var(--color-warm-neutral);
+}
+
+.service-visual {
+  position: relative;
+  height: 300px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.service-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius-lg);
+  opacity: 0.8;
+}
+
+.gradient-consult {
+  background: var(--gradient-nature);
+}
+
+.gradient-design {
+  background: var(--gradient-primary);
+}
+
+.gradient-classes {
+  background: var(--gradient-earth);
+}
+
+.gradient-install {
+  background: var(--gradient-sky);
+}
+
+/* Packages Section */
+.packages {
+  padding: var(--space-3xl) 0;
+  background: var(--color-white);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.package-card {
+  position: relative;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
+  overflow: hidden;
+  border: 1px solid rgba(153, 223, 236, 0.2);
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.package-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.package-gradient-1 {
+  background: var(--gradient-nature);
+}
+
+.package-gradient-2 {
+  background: var(--gradient-primary);
+}
+
+.package-gradient-3 {
+  background: var(--gradient-earth);
+}
+
+.package-content {
+  position: relative;
+  z-index: 2;
+}
+
+.package-card h4 {
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-md);
+  font-size: 1.5rem;
+}
+
+.package-card p {
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+}
+
+.package-features {
+  list-style: none;
+  margin-bottom: var(--space-xl);
+}
+
+.package-features li {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  color: var(--color-warm-neutral);
+}
+
+.package-features li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.package-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  padding: var(--space-md);
+  background: linear-gradient(135deg, var(--color-light) 0%, rgba(26, 200, 219, 0.1) 100%);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-lg);
+}
+
+/* Call to Action */
+.cta {
+  position: relative;
+  padding: var(--space-3xl) 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cta-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-accent);
+  opacity: 0.1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.cta p {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xl);
+  color: var(--color-warm-neutral);
+}
+
+/* Responsive Design for Services Page */
+@media (max-width: 968px) {
+  .service-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  
+  .service-content.reverse {
+    direction: ltr;
+  }
+  
+  .service-visual {
+    height: 250px;
+    order: -1;
+  }
+  
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-section {
+    margin-bottom: var(--space-2xl);
+    padding: var(--space-lg) 0;
+  }
+  
+  .service-text {
+    padding: 0;
+  }
+  
+  .service-text h3 {
+    font-size: 2rem;
+  }
+  
+  .service-visual {
+    height: 200px;
+  }
+  
+  .package-card {
+    padding: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .service-text h3 {
+    font-size: 1.75rem;
+  }
+  
+  .service-text p,
+  .service-features li {
+    font-size: 1rem;
+  }
+  
+  .price {
+    font-size: 1.25rem;
+  }
+  
+  .package-price {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "sunshine-collective",
+  "version": "1.0.0",
+  "description": "The Sunshine Collective - A wellness and personal development platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tinacms dev -c \"python3 -m http.server 3000\"",
+    "build": "tinacms build",
+    "tina:dev": "tinacms dev",
+    "tina:build": "tinacms build"
+  },
+  "keywords": [
+    "wellness",
+    "personal-development",
+    "coaching",
+    "healing",
+    "meditation"
+  ],
+  "author": "Kelly Harper - The Sunshine Collective",
+  "license": "MIT",
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.30",
+    "tinacms": "^1.5.30"
+  },
+  "dependencies": {
+    "@tinacms/datalayer": "^1.2.32"
+  }
+}

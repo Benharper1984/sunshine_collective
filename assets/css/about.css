@@ -1,0 +1,394 @@
+/* About Page Specific Styles */
+
+/* Mission Section */
+.mission {
+  padding: var(--space-2xl) 0;
+  background: var(--color-white);
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.mission-text h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mission-statement {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-lg);
+  font-family: var(--font-accent);
+  font-style: italic;
+}
+
+.mission-text p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-warm-neutral);
+}
+
+.mission-visual {
+  position: relative;
+  height: 300px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.mission-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-nature);
+  opacity: 0.8;
+  border-radius: var(--radius-lg);
+}
+
+/* Team Section */
+.team {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, var(--color-light) 0%, var(--color-off-white) 100%);
+}
+
+.team-grid {
+  display: grid;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-member {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+  background: var(--color-white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.member-photo {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-light-cyan);
+}
+
+.photo-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-primary);
+  opacity: 0.6;
+  border-radius: var(--radius-lg);
+}
+
+.member-info h3 {
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-xs);
+  font-size: 2rem;
+}
+
+.member-title {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--space-lg);
+}
+
+.member-bio {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-md);
+}
+
+.member-bio:last-child {
+  margin-bottom: 0;
+}
+
+/* Philosophy Section */
+.philosophy {
+  padding: var(--space-3xl) 0;
+  background: var(--color-white);
+}
+
+.philosophy-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+}
+
+.philosophy-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophy-text h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+  font-size: 2rem;
+}
+
+.philosophy-text p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-md);
+}
+
+.zones-explanation {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.zones-explanation h3 {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  font-size: 2rem;
+}
+
+.zones-explanation > p {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-warm-neutral);
+  margin-bottom: var(--space-2xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.zone-card {
+  background: var(--color-white);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: var(--transition-base);
+  border: 2px solid transparent;
+}
+
+.zone-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-light-cyan);
+}
+
+.zone-number {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto var(--space-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.zone-card h4 {
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-md);
+  font-size: 1.25rem;
+}
+
+.zone-card p {
+  color: var(--color-warm-neutral);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Values Section */
+.values {
+  padding: var(--space-3xl) 0;
+  background: linear-gradient(135deg, var(--color-light) 0%, var(--color-off-white) 100%);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.value-card {
+  position: relative;
+  background: var(--color-white);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
+  overflow: hidden;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+.value-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.value-gradient-1 {
+  background: var(--gradient-nature);
+}
+
+.value-gradient-2 {
+  background: var(--gradient-primary);
+}
+
+.value-gradient-3 {
+  background: var(--gradient-earth);
+}
+
+.value-gradient-4 {
+  background: var(--gradient-sky);
+}
+
+.value-content {
+  position: relative;
+  z-index: 2;
+}
+
+.value-card h4 {
+  color: var(--color-warm-dark);
+  margin-bottom: var(--space-md);
+  font-size: 1.375rem;
+}
+
+.value-card p {
+  color: var(--color-warm-neutral);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 968px) {
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  
+  .mission-visual {
+    order: -1;
+    height: 250px;
+  }
+  
+  .team-member {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+  
+  .member-photo {
+    width: 250px;
+    height: 250px;
+    justify-self: center;
+  }
+  
+  .zones-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-statement {
+    font-size: 1.25rem;
+  }
+  
+  .member-info h3 {
+    font-size: 1.75rem;
+  }
+  
+  .member-title {
+    font-size: 1.125rem;
+  }
+  
+  .member-bio {
+    font-size: 1rem;
+  }
+  
+  .philosophy-text h3,
+  .zones-explanation h3 {
+    font-size: 1.75rem;
+  }
+  
+  .team-member {
+    padding: var(--space-lg);
+  }
+  
+  .zone-card,
+  .value-card {
+    padding: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-statement {
+    font-size: 1.125rem;
+  }
+  
+  .member-photo {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .member-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .zones-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .zone-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}
