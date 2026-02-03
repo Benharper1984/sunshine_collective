@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-green: #217650;
+  --sage-green: #7ba05b;
+  --moss-green: #4a6741;
+  --cream: #f9fafd;
+  --earth-brown: #8c756a;
+  --light-aqua: #99dfec;
+  --turquoise: #1ac8db;
+  --ocean-blue: #0292b7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream text-gray-800;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105;
+    background: linear-gradient(135deg, #7ba05b 0%, #217650 100%);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 0 4px 20px rgba(33, 118, 80, 0.4);
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105;
+    background: linear-gradient(135deg, #1ac8db 0%, #0292b7 100%);
+  }
+  
+  .btn-secondary:hover {
+    box-shadow: 0 4px 20px rgba(26, 200, 219, 0.4);
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold border-2 border-forest-green text-forest-green bg-transparent transition-all duration-300 hover:bg-forest-green hover:text-white;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-bold text-forest-green mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-gray-600 max-w-2xl mx-auto;
+  }
+}
+
+/* Sun ray decorative element */
+.sun-rays {
+  position: relative;
+}
+
+.sun-rays::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Organic shape decorations */
+.organic-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+/* Before/After gallery slider */
+.before-after-container {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.before-after-container .before,
+.before-after-container .after {
+  @apply relative overflow-hidden rounded-xl;
+}
+
+.before-after-container .label {
+  @apply absolute bottom-4 left-4 px-4 py-2 rounded-full text-sm font-semibold text-white;
+}
+
+.before-after-container .before .label {
+  background: rgba(140, 117, 106, 0.9);
+}
+
+.before-after-container .after .label {
+  background: rgba(33, 118, 80, 0.9);
+}
+
+/* Rich text content styling */
+.prose-sunshine {
+  @apply prose prose-lg max-w-none;
+}
+
+.prose-sunshine h2 {
+  @apply text-forest-green font-display;
+}
+
+.prose-sunshine h3 {
+  @apply text-sage-green font-display;
+}
+
+.prose-sunshine a {
+  @apply text-turquoise hover:text-ocean-blue transition-colors;
+}
+
+.prose-sunshine blockquote {
+  @apply border-l-4 border-sage-green italic bg-white/50 py-2 rounded-r-lg;
+}
+
+/* Hero gradient background */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(123, 160, 91, 0.1) 0%, rgba(33, 118, 80, 0.1) 50%, rgba(26, 200, 219, 0.05) 100%);
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Stagger animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
